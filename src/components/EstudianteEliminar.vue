@@ -5,16 +5,29 @@
       <ul>
         <li>
           <h3>Cedula:</h3>
-          <input id="inp_cedula" type="text" />
+          <input v-model="cedula" id="inp_cedula" type="text" />
         </li>
       </ul>
     </div>
-    <button>Eliminar</button>
+    <button @click="eliminar">Eliminar</button>
   </div>
 </template>
 
 <script>
-export default {};
+import { eliminarFachada } from "@/assets/clients/clienteEstudiante";
+export default {
+  data() {
+    return {
+      cedula: null,
+    };
+  },
+  methods: {
+    async eliminar() {
+      const data = await eliminarFachada(this.cedula);
+      console.log(data);
+    },
+  },
+};
 </script>
 
 <style scoped>

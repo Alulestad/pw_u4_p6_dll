@@ -1,14 +1,14 @@
 <template>
-  <EstudiantePage />
+  <EstudiantesPage />
 </template>
 
 <script>
-import EstudiantePage from "./pages/EstudiantePage.vue";
+import EstudiantesPage from "./pages/EstudiantesPage.vue";
 
 export default {
   name: "App",
   components: {
-    EstudiantePage,
+    EstudiantesPage,
   },
 };
 </script>
