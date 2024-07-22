@@ -15,6 +15,7 @@
 
 <script>
 import { eliminarFachada } from "@/assets/clients/clienteEstudiante";
+
 export default {
   data() {
     return {
