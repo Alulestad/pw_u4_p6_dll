@@ -1,9 +1,9 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 //declaración de rutas, debo poner toas las paginas existentes
-import { EstudiantesPage } from "../pages/EstudiantesPage.vue"; //@ se pone y manda al inicio osea al src
-import { EstudiantesEliminarPage } from "../pages/EstudiantesEliminarPage.vue";
-import { EstudianteGuardarPage } from "../pages/EstudianteGuardarPage.vue";
-import { BienvenidaPage } from "../pages/BienvenidaPage.vue";
+import EstudiantesPage from "../page/EstudiantesPage.vue"; //@ se pone y manda al inicio osea al src
+import EstudiantesEliminarPage from "../page/EstudiantesEliminarPage.vue";
+import EstudianteGuardarPage from "../page/EstudianteGuardarPage.vue";
+import BienvenidaPage from "../page/BienvenidaPage.vue";
 
 const routes = [
   {
@@ -19,7 +19,7 @@ const routes = [
     component: EstudianteGuardarPage,
   },
   {
-    path: "/", //Pagina INDEX
+    path: "/",
     component: BienvenidaPage,
   },
 ];

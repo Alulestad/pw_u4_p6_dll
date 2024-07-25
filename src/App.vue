@@ -1,12 +1,7 @@
 <template>
   <div>
-    <!-- <BienvenidaPage /> -->
     <router-view />
-    <EstudianteGuardarPage />
-    <!-- <EstudiantesPage /> -->
-    <!--     <EstudiantesPage />
-    <EstudiantesEliminarPage />
-    <EstudianteGuardarPage /> -->
+
   </div>
 </template>
 
@@ -14,17 +9,12 @@
 /* import { routerview } from "vue-router"; */
 
 import BienvenidaPage from "./pages/BienvenidaPage.vue";
-import EstudiantesPage from "./pages/EstudiantesPage.vue";
-import EstudiantesEliminarPage from "./pages/EstudiantesEliminarPage.vue";
-import EstudianteGuardarPage from "./pages/EstudianteGuardarPage.vue";
 
 export default {
   name: "App",
   components: {
     BienvenidaPage,
-    EstudiantesPage,
-    EstudiantesEliminarPage,
-    EstudianteGuardarPage,
+
   },
 };
 methods: {

@@ -1,8 +1,8 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import "./css/estilos.css";
+/* import "./css/estilos.css"; */
 
-import router from "./router/router.js";
+import router from './router/router';
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(router).mount('#app');
