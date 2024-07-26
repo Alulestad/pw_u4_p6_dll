@@ -91,6 +91,16 @@ export default {
       console.log(data);
     },
   },
+  created() {
+    console.log("ROUTER>>>> ");
+    console.log(this.$route);
+    console.log("CEDULA>>>> ");
+    console.log(this.$route.params.cedula);
+    if (this.$route.params.cedula !== "vacio") {
+      this.cedula = this.$route.params.cedula;
+      this.consultar();
+    }
+  },
 };
 </script>
 

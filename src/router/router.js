@@ -4,10 +4,11 @@ import EstudiantesPage from "../page/EstudiantesPage.vue"; //@ se pone y manda a
 import EstudiantesEliminarPage from "../page/EstudiantesEliminarPage.vue";
 import EstudianteGuardarPage from "../page/EstudianteGuardarPage.vue";
 import BienvenidaPage from "../page/BienvenidaPage.vue";
+import NotFoundPage from "@/page/NotFoundPage.vue";
 
 const routes = [
   {
-    path: "/estudiante", //aca ba la ruta que quiero que tenga la pagina
+    path: "/estudiante/:cedula", //aca ba la ruta que quiero que tenga la pagina
     component: EstudiantesPage,
   },
   {
@@ -19,8 +20,12 @@ const routes = [
     component: EstudianteGuardarPage,
   },
   {
-    path: "/",
+    path: "/", //INDEX
     component: BienvenidaPage,
+  },
+  {
+    path: "/:pathMatch(.*)*", //Todas las que no hagan Match ejecuta el wildcard
+    component: NotFoundPage,
   },
 ];
 
