@@ -28,6 +28,9 @@ export default {
       console.log(data);
     },
   },
+  created() {
+    console.log("created router" + this.$route);
+  },
 };
 </script>
 

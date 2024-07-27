@@ -1,9 +1,17 @@
 <template>
   <div>
     <router-link to="/">Bienvenida</router-link>
-    <router-link to="/estudiante">Estudiante Actualizar</router-link>
+    <router-link
+      :to="{
+        name: 'prueba',
+        params: { cedula: '1' },
+        query: { edad: '25', ciudad: 'quito' },
+      }"
+      >Estudiante Actualizar</router-link
+    >
     <router-link to="/estudianteGuardar">Estudiante Crear</router-link>
-    <router-link to="/estudianteEliminar">Estudiante Eliminar</router-link>
+    <router-link to="/estudianteEliminar/1">Estudiante Eliminar</router-link>
+    <router-link to="/bloqueado">bloqueado</router-link>
   </div>
 </template>
 
